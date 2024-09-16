@@ -57,17 +57,19 @@
     <section id="about" class="about py-5">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
-            <div class="about-us-details">
-                <div class="about-us-text">
-                    <h2>Small School.Big Outcomes.</h2>
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-lg-6">
+                    <h2>Small School. Big Outcomes.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem praesentium odio id aspernatur
                         libero iste consequuntur culpa inventore nesciunt exercitationem reiciendis in optio saepe
                         impedit, consequatur repellendus alias similique vitae!</p>
                 </div>
-                <div>
-                    <img src="images/2019-01-27.jpg" alt="about us img">
-                </div>
 
+                <!-- Image Section -->
+                <div class="col-lg-6">
+                    <img src="images/2019-01-27.jpg" alt="about us img" class="img-fluid">
+                </div>
             </div>
         </div>
     </section>
@@ -107,7 +109,7 @@
         </div>
     </section>
 
-    <section id="gallery" class="gallery py-5">
+    <!-- <section id="gallery" class="gallery py-5">
         <div class="container">
             <h2 class="text-center mb-4">Gallery</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -133,7 +135,82 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="gallery" class="gallery py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Gallery</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0">
+                            <img src="images/2019-01-27.jpg" class="card-img-top" alt="Play School Activity 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1">
+                            <img src="images/2019-01-27.jpg" class="card-img-top" alt="Play School Activity 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2">
+                            <img src="images/2019-01-27.jpg" class="card-img-top" alt="Play School Activity 3">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3">
+                            <img src="images/2019-01-27.jpg" class="card-img-top" alt="Play School Activity 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <!-- Bootstrap Modal for Carousel -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Bootstrap Carousel -->
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/2019-01-27.jpg" class="d-block w-100" alt="Play School Activity 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2019-01-27.jpg" class="d-block w-100" alt="Play School Activity 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2019-01-27.jpg" class="d-block w-100" alt="Play School Activity 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2019-01-27.jpg" class="d-block w-100" alt="Play School Activity 4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="contact" class="contact bg-light py-5">
         <div class="container">
